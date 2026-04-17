@@ -196,21 +196,15 @@ Extensions I’d like to explore in a lab context: density-dependent motility (M
 ## Example console log
 
 ```
-[AMOP] Tareas seleccionadas: demo_active, vicsek_anim, phi_vs_eta
-[AMOP] demo_active
-$ python examples/demo_active.py
-[AMOP] OK (12.3s)
-[AMOP] vicsek_anim
-$ python vicsek_alignment.py --save figures/anim_vicsek.gif
-[AMOP] OK (24.8s)
-[AMOP] phi_vs_eta
-$ python phi_vs_eta.py --out figures/phi_vs_eta.png
-[AMOP] OK (142.6s)
+[AMOP] Generating example snapshot
+$ python demo.py
+[AMOP] OK
 
-[AMOP] Resumen: 3/3 OK en 179.7s
-[AMOP] Figuras: .../figures
-[AMOP] Datos: .../results/data
-[AMOP] Logs: .../results/logs
+[AMOP] Generating Vicsek animation
+$ python vicsek_alignment.py --save figures/anim_vicsek.gif
+[AMOP] OK
+
+[AMOP] Output figures saved in ./figures
 ```
 
 *(Times will vary with hardware/OS.)*
