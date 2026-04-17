@@ -98,29 +98,21 @@ so \(\Phi \in [0,1]\) measures alignment (1 = full order, 0 = disorder).
 ## Reproduce the figures
 
 ```bash
-# 1) Create environment (Python ≥3.10 recommended)
+# 1) Create environment (Python >=3.10 recommended)
 python -m venv .venv
 # Windows:
-#   .venv\Scripts activate
+#   .venv\Scripts\activate
 # macOS/Linux:
 #   source .venv/bin/activate
 pip install -r requirements.txt
 
-# 2) (Option A) Reproduce everything
-python run_all.py
-
-# 2) (Option B) Generate specific artifacts
-
-# 2.1) Example snapshot (creates figures/amop_demo_*.png)
+# 2) Generate an example snapshot
 python demo.py
 # or:
 python -m examples.run_example
 
-# 2.2) Vicsek animation
+# 3) Generate the Vicsek animation
 python vicsek_alignment.py --save figures/anim_vicsek.gif
-
-# 2.3) Order–disorder curve Φ(η)
-python phi_vs_eta.py --out figures/phi_vs_eta.png
 ```
 
 Outputs are written to `figures/` (and `results/` when applicable).  
