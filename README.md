@@ -1,4 +1,4 @@
-# AMOP — Active Matter & Optical Physics Sandbox
+# AMOP — Active Matter
 
 Collection of minimal, well-commented codes for **Atomic, Molecular, and Optical Physics (AMOP)** and **Active Matter**.  
 This repo currently includes a Vicsek-type alignment model for self-propelled particles and utilities to visualize order formation, trajectories, and the order–disorder transition.
