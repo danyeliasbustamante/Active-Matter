@@ -137,19 +137,17 @@ Use `run_all.py --only <task>` or `--skip <task>` to filter tasks.
 
 ```
 amop/                 # Core package
-  ├── simulate.py     # Vicsek-type simulation in 2D
-  ├── order_params.py # Polarization and nematic order (2D)
-  ├── bootstrap.py    # RNG seeding / global generator
-  └── __init__.py     # Public API (re-exports)
+├── simulate.py       # Vicsek-type simulation in 2D
+├── order_params.py   # Polarization and nematic order (2D)
+├── bootstrap.py      # RNG seeding / global generator
+└── __init__.py       # Public API (re-exports)
 
 examples/
-  └── run_example.py  # Minimal demo that produces a snapshot figure
+└── run_example.py    # Minimal demo that produces a snapshot figure
 
 tests/                # Minimal test suite
 figures/              # Generated figures and animations
-run_all.py            # Orchestrates all reproducible artifacts
 vicsek_alignment.py   # Generates anim_vicsek.gif
-phi_vs_eta.py         # Generates phi_vs_eta.png
 demo.py               # Simple script that produces amop_demo_*.png
 ```
 
